@@ -1,0 +1,23 @@
+import java.util.Random;
+
+public class Exercicio02 {
+    public static void main(String[] args) {
+        Random aleatorio = new Random();
+        int[][] matriz = new int[5][5];
+        int maior = Integer.MIN_VALUE;
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = aleatorio.nextInt(0, 10);
+                System.out.print(matriz[i][j] + "\t");
+                if (matriz[i][j] > maior){
+                    maior = matriz[i][j];
+                }
+
+            }
+            System.out.println();
+        }
+
+        System.out.println(maior);
+    }
+}

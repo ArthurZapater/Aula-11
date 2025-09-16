@@ -3,7 +3,7 @@ import java.util.Random;
 public class Exercicio01 {
     public static void main(String[] args) {
         Random rd = new Random();
-        int[][] m = new int[3][3];
+        int[][] m = new int[4][4];
         int somaPrincipal = 0, somaSecundaria = 0;
 
         //Entrada de dados

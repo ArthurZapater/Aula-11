@@ -1,3 +1,6 @@
+//Para identar o codigo --> Crtl + Alt + L
+
+
 import java.util.Random;
 
 public class Exercicio02 {
@@ -6,11 +9,12 @@ public class Exercicio02 {
         int[][] matriz = new int[5][5];
         int maior = Integer.MIN_VALUE;
 
+        //Entrada dos dados
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
                 matriz[i][j] = aleatorio.nextInt(0, 10);
                 System.out.print(matriz[i][j] + "\t");
-                if (matriz[i][j] > maior){
+                if (matriz[i][j] > maior) {
                     maior = matriz[i][j];
                 }
 
@@ -18,12 +22,13 @@ public class Exercicio02 {
             System.out.println();
         }
 
+        //Impressão dos dados
         System.out.println("Maior valor --> " + maior);
 
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                if(matriz[i][j] == maior){
-                    System.out.println( i + ", " + j);
+                if (matriz[i][j] == maior) {
+                    System.out.println(i + ", " + j);
                 }
             }
         }

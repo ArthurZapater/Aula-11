@@ -9,7 +9,7 @@ public class Exercicio01 {
         //Entrada de dados
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                m[i][j] = rd.nextInt(1,5);
+                m[i][j] = rd.nextInt(1, 5);
                 System.out.print(m[i][j] + "\t");
             }
             System.out.println();
@@ -18,7 +18,7 @@ public class Exercicio01 {
         //Soma diagonal principal
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                if (i == j){
+                if (i == j) {
                     somaPrincipal += m[i][j];
                 }
             }
@@ -27,7 +27,7 @@ public class Exercicio01 {
         //Soma diagonal secundaria
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m[i].length; j++) {
-                if (i + j == m.length - 1){
+                if (i + j == m.length - 1) {
                     somaSecundaria += m[i][j];
                 }
             }

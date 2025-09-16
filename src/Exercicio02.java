@@ -18,6 +18,14 @@ public class Exercicio02 {
             System.out.println();
         }
 
-        System.out.println(maior);
+        System.out.println("Maior valor --> " + maior);
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if(matriz[i][j] == maior){
+                    System.out.println( i + ", " + j);
+                }
+            }
+        }
     }
 }

@@ -1,6 +1,5 @@
 //Para identar o codigo --> Crtl + Alt + L
 
-
 import java.util.Random;
 
 public class Exercicio02 {
